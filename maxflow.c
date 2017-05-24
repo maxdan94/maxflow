@@ -5,7 +5,7 @@ http://bit.ly/maxdan94
 maximilien.danisch@gmail.com
 
 Info:
-Feel free to use these lines as you wish. This is an efficient C implementation of the Ford–Fulkerson algorithm. It should easily scale to hundreds of millions of edges.
+Feel free to use these lines as you wish. This is an efficient C implementation of the Ford-Fulkerson algorithm. It should easily scale to hundreds of millions of edges if the data is not too adverserial.
 
 To compile:
 "gcc maxflow.c -O3 -o maxflow".
@@ -129,6 +129,7 @@ typedef struct {
 } recover;
 
 
+//finds an "augmenting path" and changes the flow accordingly
 unsigned onepath(flowgraph *g,unsigned s, unsigned t) {
 	unsigned n1=1,n2=0,n=0,d=0,i,j,k,u,v;
 	int f=0,tmp,min;
@@ -262,7 +263,7 @@ int main(int argc,char** argv){
 	printf("- Time = %ldh%ldm%lds\n",(t2-t1)/3600,((t2-t1)%3600)/60,((t2-t1)%60));
 	t1=t2;
 
-	printf("Writting the result in file %s\n",argv[4]);
+	printf("Writting the results in file %s\n",argv[4]);
 	printres(g,argv[4]);
 	freefg(g);
 
