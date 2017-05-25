@@ -10,7 +10,7 @@ Feel free to use these lines as you wish. This is an efficient C implementation 
 
 # To execute:
 "./maxflow edgelist.txt source target res.txt".
-- "edgelist.txt" should contain the directed edges with capaities: one edge on each line separated by spaces "n1 n2 c".
+- "edgelist.txt" should contain the directed edges with capaities: one edge on each line (3 usigned int separated by spaces "n1 n2 c").
 - "source" and "target" are the source and target IDs.
 - "res.txt" contains the results: "n1 n2 c f" on each line.
 
