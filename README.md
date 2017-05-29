@@ -3,7 +3,7 @@ Efficient C implementation of the Ford-Fulkerson maxflow algorithm
 
 
 # Info:
-Feel free to use these lines as you wish. This is an efficient C implementation of the Ford-Fulkerson algorithm. It should easily scale to hundreds of millions of edges if the data is not too adverserial.
+Feel free to use these lines as you wish. This is an efficient C implementation of the Ford-Fulkerson algorithm (Version of Edmonds-Karp) for maxflow. It should easily scale to hundreds of millions of edges if the data is not too adverserial.
 
 # To compile:
 "gcc maxflow.c -O3 -o maxflow".
